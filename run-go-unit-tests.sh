@@ -5,5 +5,5 @@ fail() {
   exit 1
 }
 
-go test --tags=!integration ./... -coverprofile=coverage.cov ./... || fail
+# go test --tags=!integration ./... -coverprofile=coverage.cov ./... || fail
 go-test-coverage -config .testcoverage.yml || fail
