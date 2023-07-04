@@ -63,12 +63,17 @@
     files: '\.go$'
     language: 'script'
     description: "Runs `go-critic`, requires https://github.com/go-critic/go-critic"
+-   id: go-sec
+    name: 'go-sec'
+    entry: run-go-sec.sh
+    language: 'script'
+    description: "Runs `gosec`, requires https://github.com/securego/gosec"
 -   id: go-unit-tests
     name: 'go-unit-tests'
     entry: run-go-unit-tests.sh
     files: '\.go$'
     language: 'script'
-    description: "Runs `go test`"
+    description: "Runs `go test`, requires https://github.com/vladopajic/go-test-coverage"
 -   id: go-build
     name: 'go-build'
     entry: run-go-build.sh

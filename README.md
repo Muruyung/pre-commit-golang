@@ -21,6 +21,7 @@ Add this to your `.pre-commit-config.yaml`
         - id: no-go-testing
         - id: golangci-lint
         - id: go-critic
+        - id: go-sec
         - id: go-unit-tests
         - id: go-build
         - id: go-mod-tidy
@@ -39,7 +40,8 @@ Add this to your `.pre-commit-config.yaml`
 - `golangci-lint` - run `golangci-lint run ./...`, requires
    [golangci-lint](https://github.com/golangci/golangci-lint)
 - `go-critic` - run `gocritic check ./...`, requires [go-critic](https://github.com/go-critic/go-critic)
-- `go-unit-tests` - run `go test -tags=unit -timeout 30s -short -v`
+- `go-sec` - run `gosec ./...`, requires [gosec](https://github.com/securego/gosec)
+- `go-unit-tests` - run `go test ./...`, requires [go-test-coverage](https://github.com/vladopajic/go-test-coverage)
 - `go-build` - run `go build`, requires golang
 - `go-mod-tidy` - run `go mod tidy -v`, requires golang
 - `go-mod-vendor` - run `go mod vendor`, requires golang

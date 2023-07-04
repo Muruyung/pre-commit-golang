@@ -5,5 +5,5 @@ fail() {
   exit 1
 }
 
-FILES=$(go list ./... | grep -v /vendor/) || fail
-go test -tags=unit -timeout 30s -short -v ${FILES} || fail
+go test --tags=!integration ./... -coverprofile=coverage.cov ./... || fail
+go-test-coverage -config .testcoverage.yml || fail

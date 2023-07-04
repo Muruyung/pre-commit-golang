@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+gosec -exclude=G301,G302,G304,G401,G402,G404,G501 ./...
