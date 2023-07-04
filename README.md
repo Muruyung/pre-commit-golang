@@ -1,11 +1,6 @@
-pre-commit-golang
-=================
+# pre-commit-golang
 
-:rotating_light: Please see the project sunsetting announcement:
-[Issues/98](https://github.com/dnephin/pre-commit-golang/issues/98)
-:rotating_light:
-
-----
+---
 
 golang hooks for http://pre-commit.com/
 
@@ -40,9 +35,9 @@ Add this to your `.pre-commit-config.yaml`
 - `validate-toml` - Runs `tomlv`, requires
    https://github.com/BurntSushi/toml/tree/master/cmd/tomlv
 - `no-go-testing` - Checks that no files are using `testing.T`, if you want
-  developers to use a different testing framework
+   developers to use a different testing framework
 - `golangci-lint` - run `golangci-lint run ./...`, requires
-  [golangci-lint](https://github.com/golangci/golangci-lint)
+   [golangci-lint](https://github.com/golangci/golangci-lint)
 - `go-critic` - run `gocritic check ./...`, requires [go-critic](https://github.com/go-critic/go-critic)
 - `go-unit-tests` - run `go test -tags=unit -timeout 30s -short -v`
 - `go-build` - run `go build`, requires golang
