@@ -6,7 +6,7 @@ fail() {
 }
 
 noCoverage() {
-  echo 'coverage.cov file not found. Run first: \033[4;33m go test --tags=!integration ./... -coverprofile=coverage.cov ./... \033[0;37m'
+  sh -c "echo 'coverage.cov file not found. Run first: \033[4;33mgo test --tags=!integration ./... -coverprofile=coverage.cov ./...\033[0;37m'"
   exit 1
 }
 
