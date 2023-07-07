@@ -8,4 +8,4 @@ if ! command -v golangci-lint &> /dev/null ; then
     exit 1
 fi
 
-exec golangci-lint run "$@"
+golangci-lint run
