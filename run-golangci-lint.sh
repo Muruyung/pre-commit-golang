@@ -8,13 +8,4 @@ if ! command -v golangci-lint &> /dev/null ; then
     exit 1
 fi
 
-fail() {
-    err=`golangci-lint run`
-    if [`echo $err | grep "no go files to analyze"` -eq ""] ; then
-        echo $err
-        exit 1
-    fi
-    exit 0
-}
-
-golangci-lint run || fail
+golangci-lint run
