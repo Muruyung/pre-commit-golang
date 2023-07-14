@@ -38,12 +38,6 @@
     description: >
       Checks that no files are using `testing.T`, if you want developers to use
       a different testing framework
--   id: gometalinter
-    name: 'gometalinter'
-    entry: run-gometalinter.sh
-    files: '\.go$'
-    language: 'script'
-    description: ""
 -   id: golangci-lint
     name: 'golangci-lint'
     entry: run-golangci-lint.sh
