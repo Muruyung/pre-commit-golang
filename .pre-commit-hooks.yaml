@@ -62,6 +62,12 @@
     files: '\.go$'
     language: 'script'
     description: "Runs `go test`, requires https://github.com/vladopajic/go-test-coverage"
+-   id: remove-cov-file
+    name: 'remove-cov-file'
+    entry: remove-cov-file.sh
+    files: '\.sh$'
+    language: 'script'
+    description: "Remove coverage.cov file"
 -   id: go-build
     name: 'go-build'
     entry: run-go-build.sh
