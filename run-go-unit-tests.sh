@@ -27,3 +27,4 @@ then
 fi
 
 go-test-coverage -config .testcoverage.yml || fail
+rm ./coverage.cov || echo "coverage file removed"
