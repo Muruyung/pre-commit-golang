@@ -55,6 +55,7 @@
     name: 'go-sec'
     entry: run-go-sec.sh
     language: 'script'
+    files: '\.go$'
     description: "Runs `gosec`, requires https://github.com/securego/gosec"
 -   id: go-unit-tests
     name: 'go-unit-tests'
